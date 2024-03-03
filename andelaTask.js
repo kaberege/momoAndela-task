@@ -76,36 +76,43 @@ function addTable(event){
 
   //create td1
   const td1 = document.createElement("td");
+  td1.classList.add("td1-arrow");
   td1.innerHTML = sender.value;
   outRow.appendChild(td1);
 
    //create td2
   const td2 = document.createElement("td");
+  td2.classList.add("td2-arrow");
   td2.innerHTML = sendNumber.value;
   outRow.appendChild(td2);
 
    //create td3
   const td3 = document.createElement("td");
+  td3.classList.add("td3-arrow");
   td3.innerHTML = receiver.value;
   outRow.appendChild(td3);
 
    //create td4
   const td4 = document.createElement("td");
+  td4.classList.add("td4-arrow");
   td4.innerHTML = receivNumber.value;
   outRow.appendChild(td4);
 
    //create td5
   const td5 = document.createElement("td");
+  td5.classList.add("td5-arrow");
   td5.innerHTML = sendAmount.value;
   outRow.appendChild(td5);
 
    //create td6
   const td6 = document.createElement("td");
+  td6.classList.add("td6-arrow");
   td6.innerHTML = "-";
   outRow.appendChild(td6);
   
  //create td7
   const td7 = document.createElement("td");
+  td7.classList.add("td7-arrow");
   const myDate = new Date();
   td7.innerHTML = myDate.getFullYear() + ":" + (myDate.getMonth() + 1) + ":" + myDate.getDate();
   outRow.appendChild(td7);
@@ -158,23 +165,3 @@ function listDelete(e){
   }
 }
 
-/*
-// function selected
-
-function listSelected(e) {
-const elisted = momoTable.childNodes;
-elisted.forEach(function (done) {
-switch(e.target.value){
-case "all":
-done.style.display = "flex";
-break;
-case "completed":
-if(done.classList.contains('listed')) {
-done.style.display = "flex";
-} else{
-done.style.display = "none";
-}
-}
-});
-}
-*/
